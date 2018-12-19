@@ -1,0 +1,41 @@
+<html>
+        <script src="angular-1.6.5\angular-1.6.5\angular.min.js" ></script> 
+
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  -->
+        <script src="apptwo.js"></script>
+        
+    <head></head>
+    <title></title>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <div >
+        <span>{{firstName}}</span>&nbsp;
+        <span>{{lastName}}</span>
+        </br>
+        </br>
+        <div class="a" style="text-align: 'center'">
+          <label for="x">Value X: </label>
+          <input type="text" name="valuex" ng-model = "x" /></div></br>
+          <label for="y">Value Y: </label>
+          <input type="text" name="valuey" ng-model = "y" /></br><br>
+          <div style="text-align: 'center'; ">
+              <span>{{result}}</span>
+          </div>          
+        </div>
+      </br>
+      <div>
+          <select ng-model="option">
+              <option value="+" >+</option>
+              <option value="-" >-</option>
+              <option value="*" >*</option>
+              <option value="/" >/</option>
+          </select>
+      </div>
+        <div>
+          <input type="button" value="getResult" ng-click = "getResult()"/>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>    
+</html>
