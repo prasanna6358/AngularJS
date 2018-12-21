@@ -1,3 +1,4 @@
+angular.module('myApp', ['ngMaterial', 'ngMessages']);
 var app = angular.module("myApp",[]);
 app.service("MathCalculate", function(){
     this.sum = function(x,y){
