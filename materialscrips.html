@@ -1,0 +1,100 @@
+<html>
+        <!-- <script src="angular-1.6.5\angular-1.6.5\angular.min.js" ></script> -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="apptwo.js"></script>
+    <head>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.css">
+    </head>
+    <title></title>
+<body>
+    <style>
+        body {
+  width:100%;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+md-content.md-default-theme, md-content {
+  background-color: rgba(163, 160, 160, 0.45);
+}
+
+.carddemoBasicUsage .card-media {
+  background-color: #999999; }
+
+md-card > h2 {
+  padding-left : 15px;
+  
+}
+
+.note {
+  width: 100%;
+  box-sizing:border-box;
+  
+}
+
+p.good {
+  line-height: 30px;
+  padding-left: 10px;
+  margin: 10px;
+    box-sizing:border-box;  
+    background-color: rgba(0, 128, 0, 0.31);  
+}
+
+p.warn {
+
+  line-height: 30px;
+  padding-left: 10px;
+  margin: 10px;
+    box-sizing:border-box;  
+    background-color: rgba(204, 2, 5, 0.31);
+}
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular-messages.min.js"></script>
+    
+        <!-- AngularJS Material Javascript now available via Google CDN; version 1.1.10 used here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.10/angular-material.min.js"></script>
+<div style="padding: 20px;align-self: 20px;">
+        <md-card flex flex-gt-xs="50" style="width: 250px;height: 250px;">        
+    <div  class="good" ng-app="myApp" ng-controller="myCtrl">
+      <div >
+        <span>{{firstName}}</span>&nbsp;
+        <span>{{lastName}}</span>
+        </br>
+        </br>
+        <div class="a" style="text-align: 'center'">
+          <label for="x">Value X: </label>
+          <input type="text" name="valuex" ng-model = "x" /></div></br>
+          <label for="y">Value Y: </label>
+          <input type="text" name="valuey" ng-model = "y" /></br><br>
+          <div style="text-align: 'center'; ">
+              <span>{{result}}</span>
+          </div>          
+        </div>
+      </br>
+      <div>
+            <label for="x">Select operation: </label>
+          <select name="calculate" ng-model="option" >
+              <option value=""></option>
+              <option value="+" >+</option>
+              <option value="-" >-</option>
+              <option value="*" >*</option>
+              <option value="/" >/</option>
+          </select>
+          <div ng-show="show" style="color:red" >
+          <span >Select operation</span>
+          </div>
+      </div>
+    </br>
+        <div>
+          <input type="button" class="md-raised md-primary" value="getResult" ng-click = "getResult()"/>
+        </div>
+      </div>
+    </div>
+    </div>
+ </md-card-content>
+</div>
+</body>    
+</html>
